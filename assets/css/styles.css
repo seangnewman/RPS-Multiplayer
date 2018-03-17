@@ -1,0 +1,143 @@
+html{
+    font-family: 'Satisfy', cursive;
+    font-size :18px;
+    background-image: url("../image/gladiatorBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+     
+}
+body{
+    font-family: 'Orbitron', sans-serif; 
+    
+}
+
+header{
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+}
+
+h1, h2, h3{
+    color:gold;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    margin-top: .5rem;
+}
+
+#characters{
+    display:flex;
+    width: 50%;
+    margin: 0 auto;
+    
+     
+   
+}
+.characterContainer{
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    text-align: center;
+    
+  
+}
+
+.imageContainer{
+    width: 33%;
+    height: 5rem;
+    margin: 0 auto;
+     
+    overflow: hidden;
+    display:flex;
+    align-content: center;
+    background-color:darkgoldenrod;
+    
+    border-radius: 1rem;
+     
+     
+
+}
+
+img{
+    margin: 0 auto;
+    height: 10rem;
+    width: 10rem;
+}
+#battleButtonSection{
+    text-align: center;
+    width: 100%;
+}
+#battleButton{
+    border-color:goldenrod;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    background-color:goldenrod;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 1rem;
+
+}
+
+
+#battlePlayerSection{
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+     
+    display:flex;
+    justify-content: space-between
+}
+.battlePlayerButton{
+    
+    border-color:darkgrey;
+    background-color: black;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+     color:goldenrod;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.disableButton{
+     
+    opacity: 0.5;
+    
+     
+
+
+}
+
+#playerSection{
+    height: 20rem;
+    
+    width:40%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+#player1, #player2{
+    
+    width: 40%;
+    height: 100%;
+    /* background-color:black; */
+    border-radius: 2rem;
+    opacity: 1; 
+    
+    
+     
+}
+
+.playerDisplay{
+  opacity: .6;
+  background-color: darkgrey;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

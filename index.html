@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RPS - Multiplayer</title>
+  <link href="./assets/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Satisfy" rel="stylesheet">
+  <link href="./assets/css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <h2>Multiplay Version</h2>
+    </header>
+    <section id="characters">
+      <div class="characterContainer" id="rockCharacter" data-img="korg.png">
+        <div class="imageContainer">
+          <img id="rock" src="./assets/image/korg.png" >
+        </div>
+        <h3>Rock</h3>
+      </div>  
+      <div class="characterContainer" id="paperCharacter" data-img="paper.png">
+        <div class="imageContainer">
+          <img id="paper" src="./assets/image/paper.png" >
+        </div>
+        <h3>Paper</h3>
+      </div>
+      <div class="characterContainer" id="scissorsCharacter" data-img="scissors.png">
+        <div class="imageContainer">
+          <img id="scissors" src="./assets/image/scissors.png" >
+        </div>
+        <h3>Scissors</h3>
+       </div>
+    </section>
+
+    <section id="battlePlayerSection">
+            <button class="battlePlayerButton" data-active="1" id="player1Button">Player 1</button>
+            <button class="battlePlayerButton" data-active="2" id="player2Button" disabled=true>Player 2</button>
+    </section>
+
+    <section id="playerSection">
+        <div id="player1">
+             
+
+        </div>
+        <div id="player2">
+
+        </div>
+    </section>
+
+    <section id="battleButtonSection">
+        <button id="battleButton" disabled>Attack!</button>
+    </section>
+
+  </main>
+  <!-- Adding jQuery functionality -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- Adding jQueryUI functionality -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <!-- Anticipating may need for timestamping the chat functionality, and I really need the practice-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+  <!-- Custom Scripting -->
+  <script src="./assets/js/scripts.js"></script>
+    
+</body>
+</html>
