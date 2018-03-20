@@ -73,7 +73,7 @@ img{
     text-align: center;
     width: 100%;
 }
-#battleButton{
+#battleButton, #playAgainButton{
     border-color:goldenrod;
     font-family: 'Satisfy', cursive;
     font-size: 1.5rem;
@@ -81,8 +81,11 @@ img{
     border-radius: 1rem;
     padding: .5rem;
     margin: 1rem;
+    display:inline-block;
 
 }
+
+
 
 
 #battlePlayerSection{
@@ -91,8 +94,32 @@ img{
     margin: 0 auto;
      
     display:flex;
-    justify-content: space-between
+    justify-content: space-evenly;
+    color: gold;
+    font-size: 1.5rem;
 }
+
+#playerName{
+    background: lightgray;
+    font-size: 1.25rem;
+    color: grey;
+}
+
+
+#playerId{
+    width: 100%;
+    color:gold;
+    background-color:transparent;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+#battleLogin{
+    background: grey;
+    font-size: 1.5rem;
+    width: 20rem;
+}
+
 .battlePlayerButton{
     
     border-color:darkgrey;
@@ -130,9 +157,27 @@ img{
     /* background-color:black; */
     border-radius: 2rem;
     opacity: 1; 
+    text-align: center;
+    color:gold;
+    font-size: 1.5rem;
     
     
      
+}
+
+
+
+#player2 p{
+    position: relative;
+    top: 50%;
+    opacity: .4;
+}
+
+
+#player1 p{
+    position: relative;
+    top: 50%;
+    opacity: .4;
 }
 
 .playerDisplay{
@@ -141,3 +186,16 @@ img{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.playerLoses{
+    opacity: 0;
+    background-color: transparent;
+    background-image: none;
+}
+
+#playAgainButton{
+    visibility: hidden;
+    
+}
+
+

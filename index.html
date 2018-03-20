@@ -15,20 +15,38 @@
       <h1>Rock Paper Scissors</h1>
       <h2>Multiplay Version</h2>
     </header>
+    <section id="welcomeBanner">
+        <div id="playerId"> </div> 
+    </section>
+   
+   
+    <section id="battlePlayerSection">
+        
+      <form id="PlayerInputForm">
+        Player Name:
+        <input type="text" name="playerName" id="playerName" value="Your Name">
+         
+        <button class="battlePlayerButton" data-active="1" id="playerButton">Login</button>
+      </form> 
+     
+   </section>
+   
+
+
     <section id="characters">
-      <div class="characterContainer" id="rockCharacter" data-img="korg.png">
+      <div class="characterContainer" id="rockCharacter" data-img="korg.png" data-char=0>
         <div class="imageContainer">
           <img id="rock" src="./assets/image/korg.png" >
         </div>
         <h3>Rock</h3>
       </div>  
-      <div class="characterContainer" id="paperCharacter" data-img="paper.png">
+      <div class="characterContainer" id="paperCharacter" data-img="paper.png" data-char=1>
         <div class="imageContainer">
           <img id="paper" src="./assets/image/paper.png" >
         </div>
         <h3>Paper</h3>
       </div>
-      <div class="characterContainer" id="scissorsCharacter" data-img="scissors.png">
+      <div class="characterContainer" id="scissorsCharacter" data-img="scissors.png" data-char=2>
         <div class="imageContainer">
           <img id="scissors" src="./assets/image/scissors.png" >
         </div>
@@ -36,10 +54,7 @@
        </div>
     </section>
 
-    <section id="battlePlayerSection">
-            <button class="battlePlayerButton" data-active="1" id="player1Button">Player 1</button>
-            <button class="battlePlayerButton" data-active="2" id="player2Button" disabled=true>Player 2</button>
-    </section>
+   
 
     <section id="playerSection">
         <div id="player1">
@@ -53,6 +68,7 @@
 
     <section id="battleButtonSection">
         <button id="battleButton" disabled>Attack!</button>
+        <button id="playAgainButton" disabled>Another Round?</button>
     </section>
 
   </main>
@@ -62,6 +78,8 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <!-- Anticipating may need for timestamping the chat functionality, and I really need the practice-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <!-- Custom Scripting -->
   <script src="./assets/js/scripts.js"></script>
     
