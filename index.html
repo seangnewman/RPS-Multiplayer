@@ -17,22 +17,16 @@
     </header>
     <section id="welcomeBanner">
         <div id="playerId"> </div> 
+        <h3 id ="waitingNotice"></h3>
+        <h4 id="roundOutcome"></h4>
     </section>
-   
-   
     <section id="battlePlayerSection">
-        
       <form id="PlayerInputForm">
         Player Name:
         <input type="text" name="playerName" id="playerName" value="Your Name">
-         
         <button class="battlePlayerButton" data-active="1" id="playerButton">Login</button>
       </form> 
-     
-   </section>
-   
-
-
+    </section>
     <section id="characters">
       <div class="characterContainer" id="rockCharacter" data-img="korg.png" data-char=0>
         <div class="imageContainer">
@@ -51,37 +45,50 @@
           <img id="scissors" src="./assets/image/scissors.png" >
         </div>
         <h3>Scissors</h3>
-       </div>
+      </div>
     </section>
-
-   
-
+    <section>
+      <div id="waitingNotice"></div>
+      <div id="roundOutcome"></div>
+    </section>
     <section id="playerSection">
-        <div id="player1">
-             
-
-        </div>
-        <div id="player2">
-
+      <div class="playerContainer">
+        <div id="playerOneName"></div> 
+        <div id="player1Stats"></div> 
+        <div id="playerPanel1"></div>
+        <div id="player1"></div>
+        <h4 id="player1Outcome" class="playerOutcome"></h4>
+      </div>
+      <div id="chatContainer">
+      <div id="chatHeader"><span id="chatSpan">Chat!</span></div>  
+        <form id="chatForm">
+          <textarea id="chatArea"></textarea>
+          <button type="button" id="chatButton">Send</button> 
+        </form>
+        <p id="chatText"></p>
+        <div id="chatFooter"></div>  
+      </div>
+      <div class="playerContainer">
+        <div id="playerTwoName"></div> 
+        <div id="player2Stats"></div> 
+        <div id="playerPanel2"></div>
+        <div id="player2"></div>
+          <h4 id="player2Outcome" class="playerOutcome"></h4>
         </div>
     </section>
-
     <section id="battleButtonSection">
-        <button id="battleButton" disabled>Attack!</button>
-        <button id="playAgainButton" disabled>Another Round?</button>
+      <button id="playAgainButton" disabled>Another Round?</button>
     </section>
-
   </main>
-  <!-- Adding jQuery functionality -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <!-- Adding jQueryUI functionality -->
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-  <!-- Anticipating may need for timestamping the chat functionality, and I really need the practice-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-  <!-- Custom Scripting -->
-  <script src="./assets/js/scripts.js"></script>
-    
-</body>
+    <!-- Adding jQuery functionality -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Adding jQueryUI functionality -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Anticipating may need for timestamping the chat functionality, and I really need the practice-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <!-- Custom Scripting -->
+    <script src="./assets/js/scripts.js"></script>
+  </body>
 </html>

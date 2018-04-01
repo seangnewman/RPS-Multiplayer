@@ -1,183 +1,163 @@
 html{
-    font-family: 'Satisfy', cursive;
-    font-size :18px;
-    background-image: url("../image/gladiatorBackground.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-     
+  font-family: 'Satisfy', cursive;
+  font-size :18px;
+  background-image: url("../image/gladiatorBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 body{
-    font-family: 'Orbitron', sans-serif; 
-    
+  font-family: 'Orbitron', sans-serif; 
 }
 
 header{
-    text-align: center;
-    margin: 4rem 0 4rem 0;
+  text-align: center;
+  margin: 4rem 0 4rem 0;
 }
 
 h1, h2, h3{
-    color:gold;
+  color:gold;
 }
 
 h1{
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 h2{
-    font-size: 2.5rem;
+   font-size: 2.5rem;
 }
 h3{
-    margin-top: .5rem;
+  margin-top: .5rem;
 }
 
 #characters{
-    display:flex;
-    width: 50%;
-    margin: 0 auto;
-    
-     
-   
+  display:flex;
+  width: 50%;
+  margin: 0 auto;
 }
+
 .characterContainer{
-    display:flex;
-    flex-direction: column;
-    width: 33%;
-    text-align: center;
-    
-  
+  display:flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
 }
 
 .imageContainer{
-    width: 33%;
-    height: 5rem;
-    margin: 0 auto;
-     
-    overflow: hidden;
-    display:flex;
-    align-content: center;
-    background-color:darkgoldenrod;
-    
-    border-radius: 1rem;
-     
-     
-
+  width: 33%;
+  height: 5rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display:flex;
+  align-content: center;
+  background-color:darkgoldenrod;
+  border-radius: 1rem;
 }
 
 img{
-    margin: 0 auto;
-    height: 10rem;
-    width: 10rem;
+  margin: 0 auto;
+  height: 10rem;
+  width: 10rem;
 }
 #battleButtonSection{
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
-#battleButton, #playAgainButton{
-    border-color:goldenrod;
-    font-family: 'Satisfy', cursive;
-    font-size: 1.5rem;
-    background-color:goldenrod;
-    border-radius: 1rem;
-    padding: .5rem;
-    margin: 1rem;
-    display:inline-block;
-
-}
-
-
-
-
+ 
 #battlePlayerSection{
-    text-align: center;
-    width: 30%;
-    margin: 0 auto;
-     
-    display:flex;
-    justify-content: space-evenly;
-    color: gold;
-    font-size: 1.5rem;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-evenly;
+  color: gold;
+  font-size: 1.5rem;
 }
 
 #playerName{
-    background: lightgray;
-    font-size: 1.25rem;
-    color: grey;
+  background: lightgray;
+  font-size: 1.25rem;
+  color: grey;
 }
-
 
 #playerId{
-    width: 100%;
-    color:gold;
-    background-color:transparent;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 1rem 0 1rem 0;
+  width: 100%;
+  color:gold;
+  background-color:transparent;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
 }
 #battleLogin{
-    background: grey;
-    font-size: 1.5rem;
-    width: 20rem;
+  background: grey;
+  font-size: 1.5rem;
+  width: 20rem;
 }
 
 .battlePlayerButton{
-    
-    border-color:darkgrey;
-    background-color: black;
-    font-family: 'Satisfy', cursive;
-    font-size: 1.5rem;
-     color:goldenrod;
-    border-radius: 1rem;
-    padding: .5rem;
-    margin: 1rem;
+  border-color:darkgrey;
+  background-color: black;
+  font-family: 'Satisfy', cursive;
+  font-size: .875rem;
+  color:goldenrod;
+  border-radius: 1rem;
+  padding: .125rem;
+  margin: 1rem;
 }
 
 .disableButton{
-     
-    opacity: 0.5;
-    
-     
-
-
+  opacity: 0.5;
 }
 
 #playerSection{
-    height: 20rem;
-    
-    width:40%;
-    margin: 0 auto;
-    display:flex;
-    justify-content: space-between;
+  height: 30rem;
+  width:40%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+   
+}
+ 
+.playerContainer{
+  width: 40%;
+  height: 100%;
+  border-radius: 5%;
+  overflow:hidden;
+  margin-top: 1rem;
 }
 
-#player1, #player2{
-    
-    width: 40%;
-    height: 100%;
-    /* background-color:black; */
-    border-radius: 2rem;
-    opacity: 1; 
-    text-align: center;
-    color:gold;
-    font-size: 1.5rem;
-    
-    
-     
+#player2, #player1{
+ width: 100%;
+ height: 50%;
+ /* background-color:black; */
+ border-radius: 2rem;
+ opacity: 1; 
+ text-align: center;
+ color:gold;
+ font-size: 1.5rem;
+ overflow: hidden;
+ margin-top: .25rem;
+ overflow: hidden;
 }
 
-
+#playerTwoName, #player2Stats, #playerPanel2, #playerOneName, #player1Stats, #playerPanel1{
+  color:gold; 
+  text-align: center;
+  font-size: 1.125rem;
+  background-color: goldenrod;
+  opacity: .5;
+}
 
 #player2 p{
-    position: relative;
-    top: 50%;
-    opacity: .4;
+  position: relative;
+  top: 50%;
+  opacity: .4;
 }
 
-
 #player1 p{
-    position: relative;
-    top: 50%;
-    opacity: .4;
+  position: relative;
+  top: 50%;
+  opacity: .4;
 }
 
 .playerDisplay{
@@ -188,14 +168,109 @@ img{
 }
 
 .playerLoses{
-    opacity: 0;
-    background-color: transparent;
-    background-image: none;
+  opacity: 0;
+  background-color: transparent;
+  background-image: none;
 }
 
 #playAgainButton{
-    visibility: hidden;
-    
+  visibility: hidden;
 }
 
+#roundOutcome{
+  text-align: center;
+  color:goldenrod;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 
+#waitingNotice{
+  text-align: center;
+}
+
+.playerOutcome{
+  margin-top: 1rem;
+  color:red;
+  font-size: 1.50rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#chatContainer{
+  width: 25%;
+  height: 100%;
+  color: goldenrod;
+  background-color : #CDCFC1;
+  border-radius: 5%;
+  opacity: .5;
+  margin: 1.5rem;
+  overflow: hidden;
+  font-family: 'Satisfy', cursive;
+  font-size:1.25rem;
+}
+
+#chatHeader{
+  position:relative;
+  top:0;
+  background-color: grey;
+  height: 2rem;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  text-align: center;
+}
+
+#chatFooter{
+  position:relative;
+  top:0;
+  background-color: grey;
+  height: 2rem;
+   
+}
+
+#chatText{
+  position: relative;
+  top:0;
+  height: 20rem;
+  width:93%;
+  background-color: transparent;
+  margin-left:.25rem;
+  margin-right:.25rem;
+  
+}
+
+#chatForm{
+  position: relative;
+  top:0;
+  height: 6rem;
+  width:93%; 
+  margin-left:.25rem;
+  margin-right:.25rem;
+  display:flex;
+  flex-direction: column;
+}
+
+#chatArea{
+  width:100%;
+  height: 70%;
+  resize: none;
+  font-size: 1.125rem;
+  color:goldenrod;
+  opacity: .5;
+  border: 2px solid grey;
+  color:black;
+  font-weight: bold;
+
+}
+
+#chatSpan{
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-top: .250rem;
+}
+
+#chatButton{
+  margin: 0 auto;
+  border-radius: 5%;
+  background-color:goldenrod;
+  font-size: .75rem;
+}
